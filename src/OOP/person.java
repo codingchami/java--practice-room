@@ -3,6 +3,7 @@ package OOP;
 import org.w3c.dom.ls.LSOutput;
 
 import java.util.Scanner;
+import java.util.Vector;
 
 public class person {
     public static void main(String[] args) {
@@ -20,6 +21,10 @@ public class person {
 }
 
 final class Vehicle{
+
+}
+
+class car extends Vehicle{
 
 }
 
