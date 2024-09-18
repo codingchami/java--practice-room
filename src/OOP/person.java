@@ -1,5 +1,7 @@
 package OOP;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.Scanner;
 
 public class person {
@@ -13,5 +15,12 @@ public class person {
         System.out.println("Enter Username:");
         String userName = scanner.nextLine();
         System.out.println("Username is: "+userName);
+
     }
 }
+
+final class Vehicle{
+
+}
+
+
