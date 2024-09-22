@@ -20,12 +20,12 @@ public class person {
     }
 }
 
-final class Vehicle{
-
-}
-
-class car extends Vehicle{
-
-}
+//final class Vehicle{
+//
+//}
+//
+//class car extends Vehicle{
+//
+//}
 
 
