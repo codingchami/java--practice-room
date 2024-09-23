@@ -19,10 +19,10 @@ public class Inheritance extends Vehicle{
 }
 
 
-final class Vehicle {
-  ...
-}
-
-class Car extends Vehicle {
-  ...
-}
+//final class Vehicle {
+//  ...
+//}
+//
+//class Car extends Vehicle {
+//  ...
+//}
