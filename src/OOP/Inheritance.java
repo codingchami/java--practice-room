@@ -17,3 +17,12 @@ public class Inheritance extends Vehicle{
         System.out.println(inheritance.brand+" "+inheritance.modelName);
     }
 }
+
+
+final class Vehicle {
+  ...
+}
+
+class Car extends Vehicle {
+  ...
+}
