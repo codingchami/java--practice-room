@@ -15,6 +15,10 @@ public class Encapsulation {
         volume = length*width*height;
         System.out.println("Volume of the box is :"+ volume);
 
+        int area;
+        area = 2*length*width+2*length*height+2*width*height;
+        System.out.println("Area of the box is :"+area);
+
 
 
     }
