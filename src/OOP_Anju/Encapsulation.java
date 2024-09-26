@@ -11,6 +11,11 @@ class Box{
 public class Encapsulation {
     public static void main(String[] args) {
 
+        Box b1 = new Box();
+        b1.setSize(5,3,2);
+        b1.printVolume();
+        b1.printArea();
+
 //        int length;
 //        int width;
 //        int height;
