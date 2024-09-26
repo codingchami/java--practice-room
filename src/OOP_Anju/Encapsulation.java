@@ -11,6 +11,11 @@ public class Encapsulation {
         width = 5;
         height = 3;
 
+        int volume;
+        volume = length*width*height;
+        System.out.println("Volume of the box is :"+ volume);
+
+
 
     }
 }
