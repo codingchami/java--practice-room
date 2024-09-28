@@ -5,10 +5,10 @@ class Box{
     int height;
     int length;
 
-    public void setSize(int l,int w,int h){
-        length = l;
-        width = w;
-        height = h;
+    public void setSize(int length,int width,int height){
+        length = length;
+        width = width;
+        height = height;
     }
 
 //    public void printVolume(){
