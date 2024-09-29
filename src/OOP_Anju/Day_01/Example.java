@@ -1,4 +1,4 @@
-package OOP_Anju;
+package OOP_Anju.Day_01;
 
 class Box{
     int width;
@@ -41,7 +41,7 @@ class Box{
 
 }
 
-public class Encapsulation {
+public class Example{
     public static void main(String[] args) {
 
 //        Box b1 = new Box();
