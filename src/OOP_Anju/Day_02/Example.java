@@ -118,13 +118,13 @@ package OOP_Anju.Day_02;
 
 //********************************************************************************************************
 
-class Myclass{
-    int x = 100; //Instance attribute
-    static int y = 200; //static variable,template variable,class variable
-}
-
-public class Example{
-    public static void main(String[] args){
+//class Myclass{
+//    int x = 100; //Instance attribute
+//    static int y = 200; //static variable,template variable,class variable
+//}
+//
+//public class Example{
+//    public static void main(String[] args){
 //        System.out.println(Myclass.y); //200  //only stataic members can access throughr the call by class name
 //        System.out.println(Myclass.x);  //ERROR
 
@@ -132,15 +132,36 @@ public class Example{
 //        System.out.println(c1.y); //200
 //        System.out.println(c1.x); //100
 
-        Myclass c = null;
-        System.out.println(c.y);//200
-        System.out.println(c.x); //Nullpoint exception
+//        Myclass c = null;
+//        System.out.println(c.y);//200
+//        System.out.println(c.x); //Nullpoint exception
+//    }
+//}
+
+
+//********************************************************************************************************
+
+class Customer{
+    int id;
+    String name;
+
+    Customer(){}
+
+    Customer(int id,String name){
+        this.id = id;
+        this.name = name;
     }
 }
 
+public class Example{
+    public static void main(String[] args) {
+//        Customer c1 = new Customer();
 
+        new Customer().id = 123455678;
+        new Customer().name = "Kamal"; //Annonymous object(it takes the minimum space of the ram)& after the related work JVM it removes.
 
-
+    }
+}
 
 
 
