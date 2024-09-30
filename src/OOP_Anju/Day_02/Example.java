@@ -24,26 +24,82 @@ package OOP_Anju.Day_02;
 //}
 
 
-class Dog{
-    String name;
-    int age;
+//class Dog{
+//    String name;
+//    int age;
+//
+//    Dog(String name,int age){
+//        this.name = name;
+//        this.age = age;
+//    }
+//
+//    public Dog getCopy(){
+//        return this;  //its returns the object when currently running one
+//    }
+//}
+//
+//
+//
+//public class Example{
+//    public static void main(String[] args) {
+//        Dog d1 = new Dog("Tommy",2);
+//        Dog d2 = d1.getCopy(); //create the new reference varibale and store the object what returns by getCopy method
+//        System.out.println(d1==d2);
+//    }
+//}
 
-    Dog(String name,int age){
+
+class Customer{
+    private String name;
+    private double salary;
+
+    public void setName(String name){
         this.name = name;
-        this.age = age;
+    }
+    public void setSalary(double salary){
+        if(salary>0){
+            this.salary = salary;
+        }else{
+            this.salary = -salary;
+        }
     }
 
-    public Dog getCopy(){
-        return this;  //its returns the object when currently running one
+    public String getName(){
+        return this.name;
+    }
+    public double getSalary(){
+        return this.salary;
     }
 }
-
-
 
 public class Example{
     public static void main(String[] args) {
-        Dog d1 = new Dog("Tommy",2);
-        Dog d2 = d1.getCopy(); //create the new reference varibale and store the object what returns by getCopy method
-        System.out.println(d1==d2);
+        Customer c1 = new Customer();
+        c1.setName("Nimal");
+        c1.setSalary(500000);
+
+        System.out.println(c1.getName()+":"+c1.getSalary());
+
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
