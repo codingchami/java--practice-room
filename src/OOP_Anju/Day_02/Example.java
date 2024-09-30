@@ -125,12 +125,16 @@ class Myclass{
 
 public class Example{
     public static void main(String[] args){
-        System.out.println(Myclass.y); //200
+//        System.out.println(Myclass.y); //200  //only stataic members can access throughr the call by class name
 //        System.out.println(Myclass.x);  //ERROR
 
-        Myclass c1 = new Myclass();
-        System.out.println(c1.y); //200
-        System.out.println(c1.x); //100
+//        Myclass c1 = new Myclass();
+//        System.out.println(c1.y); //200
+//        System.out.println(c1.x); //100
+
+        Myclass c = null;
+        System.out.println(c.y);//200
+        System.out.println(c.x); //Nullpoint exception
     }
 }
 
