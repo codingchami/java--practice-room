@@ -87,36 +87,52 @@ package OOP_Anju.Day_02;
 //********************************************************************************************************
 
 
+//class Myclass{
+//    int x; //Instance attribute
+//    static int y; //static variable,template variable,class variable
+//}
+//
+//public class Example{
+//    public static void main(String[] args){
+//        Myclass c1 = new Myclass();
+//        c1.x = 1;
+//        c1.y = 2;
+//
+//        Myclass c2 = new Myclass();
+//        c2.x = 10;
+//        c1.y = 20;
+//
+//        Myclass c3 = new Myclass();
+//        c3.x = 100;
+//        c1.y = 200;
+//
+//        System.out.println("C1 :"+c1.x+" "+c1.y);  //1,200
+//        System.out.println("C2 :"+c2.x+" "+c2.y);  //10,200
+//        System.out.println("C3 :"+c3.x+" "+c3.y);  //100,200 //static variables load in to the class only once..(so..Static members are indepent on the object.)
+//
+//
+//
+//    }
+//}
+
+
+//********************************************************************************************************
+
 class Myclass{
-    int x; //Instance attribute
-    static int y; //static variable,template variable,class variable
+    int x = 100; //Instance attribute
+    static int y = 200; //static variable,template variable,class variable
 }
 
 public class Example{
     public static void main(String[] args){
+        System.out.println(Myclass.y); //200
+//        System.out.println(Myclass.x);  //ERROR
+
         Myclass c1 = new Myclass();
-        c1.x = 1;
-        c1.y = 2;
-
-        Myclass c2 = new Myclass();
-        c2.x = 10;
-        c1.y = 20;
-
-        Myclass c3 = new Myclass();
-        c3.x = 100;
-        c1.y = 200;
-
-        System.out.println("C1 :"+c1.x+" "+c1.y);  //1,200
-        System.out.println("C2 :"+c2.x+" "+c2.y);  //10,200
-        System.out.println("C3 :"+c3.x+" "+c3.y);  //100,200 //static variables load in to the class only once..(so..Static members are indepent on the object.)
-
-
-
+        System.out.println(c1.y); //200
+        System.out.println(c1.x); //100
     }
 }
-
-
-
 
 
 
