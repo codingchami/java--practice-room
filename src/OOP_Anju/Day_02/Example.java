@@ -190,15 +190,124 @@ package OOP_Anju.Day_02;
 
 //********************************************************************************************************
 
+//import javax.swing.*;
+//
+//public class Example{
+//    public static void main(String[] args) {
+//        JFrame frame = new JFrame();
+//        frame.setSize(500,500);
+//        frame.setTitle("Java");
+//        frame.setVisible(true);
+//    }
+//}
+
+
+//********************************************************************************************************
+
+//public class Example{
+//    public static void main(String[] args) {
+//
+//    }
+//}
+
+
 import javax.swing.*;
+
+/**
+ * Encapsulation Rules
+ * 1).Fields must be private
+ * 2).There must be setter methods
+ * 3).There must be getterr methods
+ * 4).There mmust be no-args constructor
+ * 5).There must be full arg Constructor
+ * 6).There should be toString (not necessary)
+ *
+ */
+
+//********************************************************************************************************
+
+
+//class Customer{
+//    private int customerId;
+//    private String customerName;
+//    private String customerAddress;
+//    private double customerSalary;
+//
+//    public Customer() {
+//    }
+//
+//    public Customer(int customerId, String customerName, String customerAddress, double customerSalary) {
+//        this.customerId = customerId;
+//        this.customerName = customerName;
+//        this.customerAddress = customerAddress;
+//        this.customerSalary = customerSalary;
+//    }
+//
+//    public int getCustomerId() {
+//        return customerId;
+//    }
+//
+//    public void setCustomerId(int customerId) {
+//        this.customerId = customerId;
+//    }
+//
+//    public String getCustomerName() {
+//        return customerName;
+//    }
+//
+//    public void setCustomerName(String customerName) {
+//        this.customerName = customerName;
+//    }
+//
+//    public String getCustomerAddress() {
+//        return customerAddress;
+//    }
+//
+//    public void setCustomerAddress(String customerAddress) {
+//        this.customerAddress = customerAddress;
+//    }
+//
+//    public double getCustomerSalary() {
+//        return customerSalary;
+//    }
+//
+//    public void setCustomerSalary(double customerSalary) {
+//        this.customerSalary = customerSalary;
+//    }
+//
+//    @Override
+//    public String toString() {
+//        return "Customer{" +
+//                "customerId=" + customerId +
+//                ", customerName='" + customerName + '\'' +
+//                ", customerAddress='" + customerAddress + '\'' +
+//                ", customerSalary=" + customerSalary +
+//                '}';
+//    }
+//}
+
+
+//********************************************************************************************************
+
+class Calculator extends JFrame{
+
+}
 
 public class Example{
     public static void main(String[] args) {
-        JFrame frame = new JFrame();
-        frame.setSize(500,500);
-        frame.setTitle("Java");
-        frame.setVisible(true);
+        Calculator c = new Calculator();
+
     }
 }
+
+
+
+
+
+
+
+
+
+
 
 
