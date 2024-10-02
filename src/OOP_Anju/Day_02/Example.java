@@ -291,13 +291,21 @@ import javax.swing.*;
 
 class Calculator extends JFrame{
 
+    private JButton existsButton; //attribute,reference variable
+    Calculator(){
+        setSize(400,300);
+        setTitle("CALCULATOR");
+        existsButton = new JButton("Exist");
+        add(existsButton);
+    }
+
 }
 
 public class Example{
     public static void main(String[] args) {
         Calculator c = new Calculator();
-        c.setTitle("CALCULATOR");
-        c.setSize(300,300);
+//        c.setTitle("CALCULATOR");
+//        c.setSize(300,300);
         c.setVisible(true);
 
     }
