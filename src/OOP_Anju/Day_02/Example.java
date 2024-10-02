@@ -296,6 +296,9 @@ class Calculator extends JFrame{
 public class Example{
     public static void main(String[] args) {
         Calculator c = new Calculator();
+        c.setTitle("CALCULATOR");
+        c.setSize(300,300);
+        c.setVisible(true);
 
     }
 }
