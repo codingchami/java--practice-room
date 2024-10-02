@@ -145,11 +145,23 @@ class Customer{
     int id;
     String name;
 
-    Customer(){}
+    Customer(){}     //same class, same name, different parametr signature (method overloading)
 
     Customer(int id,String name){
         this.id = id;
         this.name = name;
+    }
+
+    public void printCustomer(){
+        System.out.println(id+"-"+name);
+    }
+    public void setCustomer(int id,String name){
+        this.id = id;
+        this.name = name;
+    }
+    public void setCustomer(Customer c1){
+        this.id = c1.id;
+        this.name = c1.name;
     }
 }
 
@@ -157,8 +169,16 @@ public class Example{
     public static void main(String[] args) {
 //        Customer c1 = new Customer();
 
-        new Customer().id = 123455678;
-        new Customer().name = "Kamal"; //Annonymous object(it takes the minimum space of the ram)& after the related work JVM it removes.
+//        new Customer().id = 123455678;
+//        new Customer().name = "Kamal"; //Annonymous object(it takes the minimum space of the ram)& after the related work JVM it removes.
+
+        Customer c1 = new Customer(10,"Nimal");
+        Customer c2 = new Customer();
+         c2.setCustomer(15,"Chamith");
+
+         c1.printCustomer(); //10-Nimal
+         c2.printCustomer(); //15-Chamith
+
 
     }
 }
